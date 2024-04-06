@@ -26,6 +26,10 @@ module.exports = {
           "css-loader", // for styles
         ],
       },
+      {
+        test: /\.png$/i,
+        type: 'asset/resource',
+      }
     ],
   },
   resolve: {
