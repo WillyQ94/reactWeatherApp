@@ -1,18 +1,35 @@
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 400px){
     .displayCurrentWeather img {
-        position: relative;
-    width: 10rem;
-    margin-top: -4rem;
-    margin-right: -10px;
-    float: right;
+        position: absolute;
+        width: 10rem;
+        top: -5rem;
+        right: -1rem;
     }    
 }
 @media only screen and (min-width:401px) {
     .displayCurrentWeather img {
-        position: relative;
+        position: absolute;
         width: 15rem;
-        margin-top: -5rem;
-        float:right;
+        top: -5rem;
+        right: -1rem;
     }    
+}
+
+.imageContainer{
+    position:relative;
+}
+
+
+
+.weatherInfoContainer h1 {
+    color: #6C40B5;
+}
+
+.weatherInfoContainer p{
+    margin:0px;
+}
+
+.weatherInfoContainer {
+    margin-top: 20px;
 }

@@ -16,8 +16,12 @@
     }
 
     .searchHistoryContainer .row{
-        padding-left: calc(var(--bs-gutter-x)* 1) !important;
-        padding-right: calc(var(--bs-gutter-x)* 1) !important;
+        padding-left: calc(var(--bs-gutter-x)* 0.5) !important;
+        padding-right: calc(var(--bs-gutter-x)* 0.5) !important;
+    }
+    
+    p {
+        font-size: 10px;
     }
 }
 
@@ -29,10 +33,6 @@
         padding-left: calc(var(--bs-gutter-x)* 0.5) !important;
         padding-right: calc(var(--bs-gutter-x)* 0.5) !important;
     }
-}
-
-.searchHistoryContainer {
-    
 }
 
 .searchHistoryContainer .row {
