@@ -1,9 +1,10 @@
 import React from "react";
+import SearchSection from "./components/SearchSection/SearchSection";
 
 function App() {
   return (
     <div className="App mx-auto" >
-      <h1>Hello World..!</h1>
+      <SearchSection />
     </div>
   );
 }

@@ -1,0 +1,19 @@
+.searchField {
+    width:100%;
+}
+
+.searchField label {
+    position: absolute;
+    padding: 0.4rem 1rem;
+    font-size: 10px;
+}
+
+/* .searchField {
+    padding-top: 0.5rem;
+} */
+
+.searchField input{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size:16px;
+}
