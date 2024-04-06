@@ -2,6 +2,7 @@
     --body_background_image:  url("../public/svg/assets/bg-light.png");
     --bs-border-radius: 1rem !important;
     --bs-body-bg: #FFFFFF33 !important;
+    --bs-border-color: #FFFFFF50 !important
 }
 
 .btn-secondary {
@@ -19,8 +20,11 @@
 body {
     background-image: var(--body_background_image);
     background-repeat: no-repeat;
+    margin-left: auto !important;
+    margin-right:auto !important;
 }
 
 .App {
     max-width: 700px;
+    width:95%;
 }

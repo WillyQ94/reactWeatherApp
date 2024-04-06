@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import "./SearchHistory.css";
+import DisplayCurrentWeather from "../DisplayCurrentWeather/DisplayCurrentWeather";
 
 
 function SearchHistory(){
@@ -9,7 +10,7 @@ function SearchHistory(){
         <Container className="searchHistoryContainer" fluid>
             <Row>
                 {/* Task : Display Weather */}
-                <p>Test</p>
+                <DisplayCurrentWeather/>
             </Row>
             <Row>
                 {/* Print out the list of Searched History */}

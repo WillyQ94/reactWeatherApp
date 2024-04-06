@@ -1,6 +1,10 @@
 .searchHistoryContainer {
     background-color: var(--bs-body-bg);
     border-radius: var(--bs-border-radius);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    min-height: 200px;
+    padding: 0px !important;
+    width: auto !important;
 }
 
 @media only screen and (max-width:400px) {
@@ -28,9 +32,7 @@
 }
 
 .searchHistoryContainer {
-    min-height: 200px;
-    padding: 0px !important;
-    width: auto !important;
+    
 }
 
 .searchHistoryContainer .row {

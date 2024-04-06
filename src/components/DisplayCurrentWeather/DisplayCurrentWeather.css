@@ -1,0 +1,18 @@
+
+@media only screen and (max-width: 600px){
+    .displayCurrentWeather img {
+        position: relative;
+    width: 10rem;
+    margin-top: -4rem;
+    margin-right: -10px;
+    float: right;
+    }    
+}
+@media only screen and (min-width:401px) {
+    .displayCurrentWeather img {
+        position: relative;
+        width: 15rem;
+        margin-top: -5rem;
+        float:right;
+    }    
+}
