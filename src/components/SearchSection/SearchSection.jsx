@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
@@ -7,10 +7,14 @@ import Col from "react-bootstrap/Col";
 import SearchBar from "../SearchBar/SearchBar";
 import countryCodeList from "../../../public/json/countryCode.json";
 import "./SearchSection.css";
+import OpenWeatherMapAPIService from "../../services/openWeatherMapAPIService";
+import FetchClient from "../../services/FetchClient";
 
-function SearchSection(){
+function SearchSection( { setCurrentSearch }){
 
     const [searchedLocation, setSearchedLocation] = useState("");
+    const [result, setResult] = useState();
+
     function handleSearchedLocation(data) {
         setSearchedLocation(data);
     };
@@ -43,23 +47,47 @@ function SearchSection(){
 
         return "";
     }
+    
+    useEffect(() => {
+        console.log(result);
+        if ( typeof result !== "undefined") {
+            if (result.cod === 200) {
+                setCurrentSearch(result);
+            }
+        }
+    },[result]);
 
     function handleSearch(e) {
         e.preventDefault();
         const inputArray = searchedLocation.split(",");
-
         const countryCode = updateCountryCode(inputArray);
-        
         const cityName  = updateCityName(inputArray,countryCode);
 
-        var urlWithParams = openWeatherAPIGetCurrentWeather;
+        var params = "";
         if (cityName.length && countryCode.length) {
-            urlWithParams += (cityName + ",," + countryCode);
+            params = (cityName + ",," + countryCode);
         } else if (cityName.length) {
-            urlWithParams += (cityName + ",,");
+            params = (cityName + ",,");
         } else if (countryCode.length) {
-            urlWithParams += (",," + countryCode);
+            params = (",," + countryCode);
         }
+
+        console.log(params);
+
+        const openWeatherMapAPIService = new OpenWeatherMapAPIService(FetchClient);
+        const fetchOpenWeatherMap = async () => {
+            try {
+                const getCurrentWeather = await openWeatherMapAPIService.getWeather(params);
+                setResult(getCurrentWeather);
+                
+            } 
+            catch {
+                console.log("error in handleSearch");
+            }
+        }
+        
+        fetchOpenWeatherMap();
+    
     }
 
     return (

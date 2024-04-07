@@ -20,10 +20,10 @@ function SearchHistoryItem() {
                     </Row>
                 </Col>
                 <Col xs={1}>
-                    <Button variant="secondary searchButton"><i class="bi bi-search"></i></Button>
+                    <Button variant="secondary searchButton"><i className="bi bi-search"></i></Button>
                 </Col>
                 <Col xs={1}>
-                    <Button variant="secondary deleteButton"><i class="bi bi-trash-fill"></i></Button>
+                    <Button variant="secondary deleteButton"><i className="bi bi-trash-fill"></i></Button>
                 </Col>
             </Row>
         </Container>
