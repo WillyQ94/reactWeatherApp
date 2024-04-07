@@ -20,10 +20,9 @@
     position:relative;
 }
 
-
-
 .weatherInfoContainer h1 {
     color: #6C40B5;
+    font-size: 81px;
 }
 
 .weatherInfoContainer p{

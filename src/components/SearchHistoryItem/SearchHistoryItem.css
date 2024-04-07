@@ -1,0 +1,45 @@
+.searchHistoryItemContainer {
+    background-color: #FFFFFF66;
+    border-radius: var(--bs-border-radius);
+}
+
+.searchHistoryItemContainer p {
+    text-align: right;
+    margin-top:auto;
+    margin-bottom:auto;
+    font-size:14px;
+}
+
+.searchHistoryItemContainer h5 {
+    margin-top:auto;
+    margin-bottom:auto;
+    font-size: 16px;
+}
+
+.searchHistoryItemContainer button i{
+    font-size:1rem;
+    text-align: center;
+    margin-top:auto;
+    margin-bottom:auto;
+    color: #00000080;
+}
+
+.searchHistoryItemContainer .btn {
+    --bs-btn-padding-x:0.5rem;
+    --bs-btn-border-radius: 50%;
+    --bs-btn-color: #FFFFFF;
+}
+.searchHistoryItemContainer .row{
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+}
+
+.searchHistoryItemContainer .row .col-10{
+    margin-top:auto !important;
+    margin-bottom: auto !important;
+}
+
+.searchHistoryItemContainer .btn-secondary {
+    --bs-btn-bg:#FFFFFF;
+    --bs-btn-border-color: #FFFFFF;
+}
