@@ -1,0 +1,10 @@
+.searchHistoryListContainer {
+    background-color: var(--bs-body-bg);
+    border-radius: var(--bs-border-radius);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    max-width: 620px !important;
+    min-height: 200px;
+    margin-left: calc(var(--bs-gutter-x)* .5) !important;
+    margin-right: calc(var(--bs-gutter-x)* .5) !important;
+    margin-top:10px !important;
+}

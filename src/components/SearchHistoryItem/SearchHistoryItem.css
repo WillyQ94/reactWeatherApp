@@ -1,0 +1,39 @@
+.searchHistoryItemContainer {
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    border-radius: var(--bs-border-radius);
+}
+
+.searchHistoryItemContainer p {
+    text-align: right;
+    margin-top:auto;
+    margin-bottom:auto;
+    font-size:14px;
+}
+
+.searchHistoryItemContainer h5 {
+    margin-top:auto;
+    margin-bottom:auto;
+    font-size: 16px;
+}
+
+.searchHistoryItemContainer button i{
+    font-size:1rem;
+    text-align: center;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.searchHistoryItemContainer .btn {
+    --bs-btn-padding-x:0.5rem;
+    --bs-btn-border-radius: 50%;
+}
+.searchHistoryItemContainer .row{
+    padding-bottom:0.25rem;
+}
+
+.searchHistoryItemContainer .row .col-10{
+    margin-top:auto !important;
+    margin-bottom: auto !important;
+}
+
