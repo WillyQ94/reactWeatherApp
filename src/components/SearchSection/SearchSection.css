@@ -12,6 +12,13 @@
     
 }
 
+.searchSection .btn-secondary {
+    --bs-btn-bg: #6C40B5 !important;
+    --bs-btn-border-color: #6C40B5 !important;
+    --bs-btn-hover-bg: #6C40B533 !important;
+    --bs-btn-hover-border-color: #6C40B533 !important;
+}
+
 .searchSection .col-10,.col-sm-11 {
     padding-left:0px;
 }
