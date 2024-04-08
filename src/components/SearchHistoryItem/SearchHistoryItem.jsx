@@ -12,14 +12,14 @@ function SearchHistoryItem({
     setCurrentSearch, setSearchHistoryList ,
     searchHistory, searchHistoryList}) {
     
-    function handleRemoveItem(key) {
+    function handleRemoveItem() {
         if (key > -1 ){
             searchHistoryList.splice(key,1);
         }
         setSearchHistoryList(searchHistoryList);
     }
 
-    function handleUpdateSearch(searchHistory){
+    function handleUpdateSearch(){
         console.log(searchHistory);
         setCurrentSearch(searchHistory);
     };
@@ -39,11 +39,11 @@ function SearchHistoryItem({
                 </Col>
                 <Col xs={1}>
                     {/* <Button  variant="secondary searchButton"><i className="bi bi-search"></i></Button> */}
-                    <Button onClick={handleUpdateSearch(searchHistory)} variant="secondary searchButton"><i className="bi bi-search"></i></Button>
+                    <Button onClick={handleUpdateSearch} variant="secondary searchButton"><i className="bi bi-search"></i></Button>
                 </Col>
                 <Col xs={1}>
                     {/* <Button variant="secondary deleteButton"><i className="bi bi-trash-fill"></i></Button> */}
-                    <Button onClick={handleRemoveItem(key)} variant="secondary deleteButton"><i className="bi bi-trash-fill"></i></Button>
+                    <Button onClick={handleRemoveItem} variant="secondary deleteButton"><i className="bi bi-trash-fill"></i></Button>
                 </Col>
             </Row>
         </Container>
