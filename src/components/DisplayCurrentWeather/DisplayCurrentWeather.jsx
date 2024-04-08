@@ -5,16 +5,19 @@ import Col from "react-bootstrap/Col";
 import "./DisplayCurrentWeather.css";
 import sunImage from "../../../public/svg/assets/sun.png";
 import cloudImage from "../../../public/svg/assets/cloud.png";
+import moment from "moment";
 
 
-function DisplayCurrentWeather() {
+function DisplayCurrentWeather({currentSearch}) {
 
     //UseEffect to display the currentWeather image sun or cloudly
-
+    
     return (
         <Container className="displayCurrentWeather">
             <Container className="imageContainer">
-                <img src={sunImage} alt="sunImage"/>
+                {currentSearch?.weather[0]?.main !== "Clouds" ? 
+                    <img src={sunImage} alt="sunImage"/> :
+                    <img src={cloudImage} alt="cloudImage"/>}        
             </Container>
             <Container className="weatherInfoContainer" fluid>
                 <Row>
@@ -23,18 +26,18 @@ function DisplayCurrentWeather() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col><h1>26°</h1></Col>
+                    <Col><h1>{currentSearch?.main?.temp}</h1></Col>
                 </Row>
                 <Row>
                     <Col>
-                        <p>H: 29° L: 26°</p>
+                        <p>H: {currentSearch?.main?.temp_max}° L: {currentSearch?.main?.temp_min}°</p>
                     </Col>
                 </Row>
                 <Row>
-                    <Col><p>State & Country</p></Col>
-                    <Col><p>DateTime Retrieve</p></Col>
-                    <Col><p>Humidity</p></Col>
-                    <Col><p>Weather</p></Col>
+                    <Col xs={4}><p>{currentSearch?.name} & {currentSearch?.sys?.country}</p></Col>
+                    <Col xs={4}><p>{moment(currentSearch?.dt).format("DD-MM-YYYY hh:mm A")}</p></Col>
+                    <Col xs={2}><p>{currentSearch?.main?.humidity}</p></Col>
+                    <Col xs={2}><p>{currentSearch.weather[0].main}</p></Col>
                 </Row>
             </Container>
         </Container>
