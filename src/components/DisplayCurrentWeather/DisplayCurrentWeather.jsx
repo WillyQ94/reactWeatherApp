@@ -34,8 +34,8 @@ function DisplayCurrentWeather({currentSearch}) {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={4}><p>{currentSearch?.name} & {currentSearch?.sys?.country}</p></Col>
-                    <Col xs={4}><p>{moment(currentSearch?.dt).format("DD-MM-YYYY hh:mm A")}</p></Col>
+                    <Col xs={4}><p>{currentSearch?.name}, {currentSearch?.sys?.country}</p></Col>
+                    <Col xs={4}><p>{moment(parseInt(currentSearch?.updatedDT)*1000).format("DD-MM-YYYY hh:mm A")}</p></Col>
                     <Col xs={2}><p>{currentSearch?.main?.humidity}</p></Col>
                     <Col xs={2}><p>{currentSearch.weather[0].main}</p></Col>
                 </Row>

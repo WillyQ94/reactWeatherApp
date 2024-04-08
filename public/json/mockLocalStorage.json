@@ -1,0 +1,189 @@
+[
+        {
+            "coord": {
+                "lon": 121.5817,
+                "lat": 24.947
+            },
+            "weather": [
+                {
+                    "id": 300,
+                    "main": "Drizzle",
+                    "description": "light intensity drizzle",
+                    "icon": "09d"
+                },
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10d"
+                }
+            ],
+            "base": "stations",
+            "main": {
+                "temp": 22.56,
+                "feels_like": 22.52,
+                "temp_min": 20.58,
+                "temp_max": 23.92,
+                "pressure": 1012,
+                "humidity": 63
+            },
+            "visibility": 8000,
+            "wind": {
+                "speed": 2.57,
+                "deg": 100
+            },
+            "rain": {
+                "1h": 0.37
+            },
+            "clouds": {
+                "all": 75
+            },
+            "dt": 1712535007,
+            "sys": {
+                "type": 2,
+                "id": 2019032,
+                "country": "TW",
+                "sunrise": 1712525883,
+                "sunset": 1712571154
+            },
+            "timezone": 28800,
+            "id": 1665148,
+            "name": "New Taipei City",
+            "cod": 200,
+            "updatedDT": 1712538725
+        },
+        {
+            "coord": {
+                "lon": 103.9403,
+                "lat": 1.3581
+            },
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "broken clouds",
+                    "icon": "04d"
+                }
+            ],
+            "base": "stations",
+            "main": {
+                "temp": 28.61,
+                "feels_like": 33.68,
+                "temp_min": 27.88,
+                "temp_max": 29.05,
+                "pressure": 1009,
+                "humidity": 80
+            },
+            "visibility": 10000,
+            "wind": {
+                "speed": 1.03,
+                "deg": 40
+            },
+            "clouds": {
+                "all": 75
+            },
+            "dt": 1712535018,
+            "sys": {
+                "type": 2,
+                "id": 265583,
+                "country": "SG",
+                "sunrise": 1712530909,
+                "sunset": 1712574594
+            },
+            "timezone": 28800,
+            "id": 1880216,
+            "name": "Tampines Estate",
+            "cod": 200,
+            "updatedDT": 1712519100
+        },
+        {
+            "coord": {
+                "lon": 103.5,
+                "lat": 2
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "overcast clouds",
+                    "icon": "04n"
+                }
+            ],
+            "base": "stations",
+            "main": {
+                "temp": 24.09,
+                "feels_like": 25.09,
+                "temp_min": 24.09,
+                "temp_max": 24.09,
+                "pressure": 1007,
+                "humidity": 97,
+                "sea_level": 1007,
+                "grnd_level": 996
+            },
+            "visibility": 10000,
+            "wind": {
+                "speed": 1.36,
+                "deg": 34,
+                "gust": 1.91
+            },
+            "clouds": {
+                "all": 97
+            },
+            "dt": 1712520386,
+            "sys": {
+                "country": "MY",
+                "sunrise": 1712530995,
+                "sunset": 1712574720
+            },
+            "timezone": 28800,
+            "id": 1733049,
+            "name": "Johor",
+            "cod": 200,
+            "updatedDT": 1712515500
+        },
+        {
+            "coord": {
+                "lon": -115.1372,
+                "lat": 36.175
+            },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "clear sky",
+                    "icon": "01d"
+                }
+            ],
+            "base": "stations",
+            "main": {
+                "temp": 19.38,
+                "feels_like": 17.79,
+                "temp_min": 18.74,
+                "temp_max": 20.15,
+                "pressure": 1012,
+                "humidity": 16
+            },
+            "visibility": 10000,
+            "wind": {
+                "speed": 4.92,
+                "deg": 60,
+                "gust": 0
+            },
+            "clouds": {
+                "all": 0
+            },
+            "dt": 1712536787,
+            "sys": {
+                "type": 2,
+                "id": 2083590,
+                "country": "US",
+                "sunrise": 1712495830,
+                "sunset": 1712542043
+            },
+            "timezone": -25200,
+            "id": 5506956,
+            "name": "Las Vegas",
+            "cod": 200, 
+            "updatedDT": 1712508298
+        }
+    ]

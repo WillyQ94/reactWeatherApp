@@ -6,7 +6,7 @@ import DisplayCurrentWeather from "../DisplayCurrentWeather/DisplayCurrentWeathe
 import SearchHistoryList from "../SearchHistoryList/SearchHistoryList";
 
 
-function SearchHistory({currentSearch, setCurrentSearch}){
+function SearchHistory({currentSearch, setCurrentSearch, searchHistoryList, setSearchHistoryList}){
     return (
         <Container className="searchHistoryContainer" fluid>
             <Row>
@@ -15,7 +15,10 @@ function SearchHistory({currentSearch, setCurrentSearch}){
             </Row>
             <Row>
                 {/* Print out the list of Searched History */}
-                <SearchHistoryList setCurrentSearch={setCurrentSearch}/>
+                <SearchHistoryList 
+                    setCurrentSearch={setCurrentSearch} 
+                    searchHistoryList={searchHistoryList}
+                    setSearchHistoryList={setSearchHistoryList}/>
             </Row>
         </Container>
     )
